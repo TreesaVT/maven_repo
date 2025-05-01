@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-01T16:04:34 IST" name="Suite" finished-at="2025-05-01T16:05:16 IST" duration-ms="41901">
+    <groups>
+    </groups>
+    <test started-at="2025-05-01T16:04:34 IST" name="Testing in chrome" finished-at="2025-05-01T16:05:16 IST" duration-ms="41901">
+      <class name="packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon_SearchforAproduct">
+        <test-method is-config="true" signature="launch()[pri:0, instance:packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon_SearchforAproduct@4c371370]" started-at="2025-05-01T16:04:59 IST" name="launch" finished-at="2025-05-01T16:05:06 IST" duration-ms="6634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="validcredentials_searchingproduct()[pri:0, instance:packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon_SearchforAproduct@4c371370]" started-at="2025-05-01T16:05:06 IST" name="validcredentials_searchingproduct" finished-at="2025-05-01T16:05:16 IST" duration-ms="10368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validcredentials_searchingproduct -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon_SearchforAproduct@4c371370]" started-at="2025-05-01T16:05:16 IST" name="quit" finished-at="2025-05-01T16:05:16 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon_SearchforAproduct -->
+      <class name="packageAmazon.ProjectAmazon.Testcase1_LogintoAmazon">
+        <test-method is-config="true" signature="launch()[pri:0, instance:packageAmazon.ProjectAmazon.Testcase1_LogintoAmazon@2d7275fc]" started-at="2025-05-01T16:04:34 IST" name="launch" finished-at="2025-05-01T16:04:43 IST" duration-ms="8588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="validcredentials()[pri:0, instance:packageAmazon.ProjectAmazon.Testcase1_LogintoAmazon@2d7275fc]" started-at="2025-05-01T16:04:43 IST" name="validcredentials" finished-at="2025-05-01T16:04:59 IST" duration-ms="15901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validcredentials -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:packageAmazon.ProjectAmazon.Testcase1_LogintoAmazon@2d7275fc]" started-at="2025-05-01T16:04:59 IST" name="quit" finished-at="2025-05-01T16:04:59 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- packageAmazon.ProjectAmazon.Testcase1_LogintoAmazon -->
+    </test> <!-- Testing in chrome -->
+  </suite> <!-- Suite -->
+</testng-results>
