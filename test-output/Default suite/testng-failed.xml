@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="packageAmazon.ProjectAmazon.Testcase7_ProductpagedisplaysPriceReviews">
+      <class name="packageAmazon.ProjectAmazon.Testcase11_CheckoutProcessAddressPaymentSelectionOrderreview">
         <methods>
           <include name="quit"/>
           <include name="launch"/>
-          <include name="displaysPriceProductdescriptionReviews"/>
+          <include name="checkoutProcessAddressPaymentSelectionOrderreview"/>
         </methods>
-      </class> <!-- packageAmazon.ProjectAmazon.Testcase7_ProductpagedisplaysPriceReviews -->
+      </class> <!-- packageAmazon.ProjectAmazon.Testcase11_CheckoutProcessAddressPaymentSelectionOrderreview -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

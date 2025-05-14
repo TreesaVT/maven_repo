@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="42.494" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="651.493" tests="16" errors="0" skipped="1" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Users\User\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_23.0.1.v20241024-1700\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire1676016644800596587\surefirebooter-20250501160434017_3.jar C:\Users\User\AppData\Local\Temp\surefire1676016644800596587 2025-05-01T16-04-33_891-jvmRun1 surefire-20250501160434017_1tmp surefire_0-20250501160434017_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire15382287012888739639\surefirebooter-20250512215521762_3.jar C:\Users\User\AppData\Local\Temp\surefire15382287012888739639 2025-05-12T21-55-21_633-jvmRun1 surefire-20250512215521762_1tmp surefire_0-20250512215521762_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\User\eclipse-workspace\ProjectAmazon\target\test-classes;C:\Users\User\eclipse-workspace\ProjectAmazon\target\classes;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\4.30.0\selenium-java-4.30.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\4.30.0\selenium-api-4.30.0.jar;C:\Users\User\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.30.0\selenium-chrome-driver-4.30.0.jar;C:\Users\User\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.30.0\selenium-chromium-driver-4.30.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-json\4.30.0\selenium-json-4.30.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.30.0\selenium-manager-4.30.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.30.0\selenium-devtools-v132-4.30.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.30.0\selenium-devtools-v133-4.30.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v134\4.30.0\selenium-devtools-v134-4.30.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.30.0\selenium-edge-driver-4.30.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.30.0\selenium-firefox-driver-4.30.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-http\4.30.0\selenium-http-4.30.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.30.0\selenium-ie-driver-4.30.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.30.0\selenium-remote-driver-4.30.0.jar;C:\Users\User\.m2\repository\com\google\guava\guava\33.4.5-jre\guava-33.4.5-jre.jar;C:\Users\User\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\User\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-api\1.48.0\opentelemetry-api-1.48.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-context\1.48.0\opentelemetry-context-1.48.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.48.0\opentelemetry-exporter-logging-1.48.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.48.0\opentelemetry-sdk-common-1.48.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.48.0\opentelemetry-sdk-extension-autoconfigure-spi-1.48.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.48.0\opentelemetry-sdk-extension-autoconfigure-1.48.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.48.0\opentelemetry-sdk-trace-1.48.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.48.0\opentelemetry-sdk-1.48.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.48.0\opentelemetry-sdk-metrics-1.48.0.jar;C:\Users\User\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.48.0\opentelemetry-sdk-logs-1.48.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.17.2\byte-buddy-1.17.2.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-os\4.30.0\selenium-os-4.30.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.30.0\selenium-safari-driver-4.30.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\4.30.0\selenium-support-4.30.0.jar;C:\Users\User\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\User\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\User\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\User\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\User\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\User\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\User\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\User\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\User\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\User\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\User\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire1676016644800596587\surefirebooter-20250501160434017_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire15382287012888739639\surefirebooter-20250512215521762_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.1+11"/>
@@ -60,39 +60,122 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="validcredentials" classname="packageAmazon.ProjectAmazon.Testcase1_LogintoAmazon" time="15.901">
+  <testcase name="RegisternewUser" classname="packageAmazon.ProjectAmazon.Testcase1_RegisterNewUser" time="11.06">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-May 01, 2025 4:04:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 135
+May 12, 2025 9:55:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
 ]]></system-err>
   </testcase>
-  <testcase name="validcredentials_searchingproduct" classname="packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon_SearchforAproduct" time="10.367">
-    <system-out><![CDATA[73
+  <testcase name="validcredentials" classname="packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon" time="0.0">
+    <skipped message="java.lang.reflect.InvocationTargetException&#10;Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [48022313a5267724258e702b79efd390, actions {actions=[org.openqa.selenium.interactions.Sequence@b965857]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.92, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58151/devtoo..., se:cdpVersion: 136.0.7103.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 48022313a5267724258e702b79efd390"/>
+    <system-err><![CDATA[May 12, 2025 9:55:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="validcredentials" classname="packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon" time="9.548">
+    <system-err><![CDATA[May 12, 2025 9:56:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="invalidcredentials" classname="packageAmazon.ProjectAmazon.Testcase3_LoginFailswithIncorrectEmailorPassword" time="4.165">
+    <system-out><![CDATA[Invalid email address.
 ]]></system-out>
-    <system-err><![CDATA[May 01, 2025 4:04:59 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Connection reset
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
-	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
-	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1478)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1423)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1423)
-
-May 01, 2025 4:05:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 135, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 135
+    <system-err><![CDATA[May 12, 2025 9:56:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="editProfileInfo" classname="packageAmazon.ProjectAmazon.Testcase4_EditProfileInfo" time="33.89">
+    <system-out><![CDATA[Treesa
+Treesa VT
+]]></system-out>
+    <system-err><![CDATA[May 12, 2025 9:56:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="validcredentials_searchingproduct" classname="packageAmazon.ProjectAmazon.Testcase5_LogintoAmazon_SearchforAproduct" time="11.243">
+    <system-out><![CDATA[70
+]]></system-out>
+    <system-err><![CDATA[May 12, 2025 9:57:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="searchingwithFiltersYieldAccurateResults" classname="packageAmazon.ProjectAmazon.Testcase6_SearchingwithFiltersYieldAccurateResults" time="58.523">
+    <system-err><![CDATA[May 12, 2025 9:58:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="displaysPriceProductdescriptionReviews" classname="packageAmazon.ProjectAmazon.Testcase7_ProductpagedisplaysPriceReviews" time="16.435">
+    <system-out><![CDATA[true
+]]></system-out>
+    <system-err><![CDATA[May 12, 2025 9:59:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="checkifProductcanbeSortedByPrice" classname="packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice" time="12.197">
+    <system-out><![CDATA[[]
+172
+Found price: 172
+172
+Found price: 172
+172
+Found price: 172
+172
+Found price: 172
+172
+Found price: 172
+172
+Found price: 172
+172
+Found price: 172
+Price sorting check complete.
+]]></system-out>
+    <system-err><![CDATA[May 12, 2025 9:59:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="productaddedtocart" classname="packageAmazon.ProjectAmazon.Testcase9_ProductaddedtoCart" time="25.053">
+    <system-out><![CDATA[Added to cart
+]]></system-out>
+    <system-err><![CDATA[May 12, 2025 10:00:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="addandRemoveItemQuantity" classname="packageAmazon.ProjectAmazon.Testcase10_AddandRemoveItemQuantity" time="41.346">
+    <system-out><![CDATA[7
+6
+]]></system-out>
+    <system-err><![CDATA[May 12, 2025 10:00:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="checkoutProcessAddressPaymentSelectionOrderreview" classname="packageAmazon.ProjectAmazon.Testcase11_CheckoutProcessAddressPaymentSelectionOrderreview" time="55.494">
+    <system-err><![CDATA[May 12, 2025 10:01:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="selectEachPaymentMethod" classname="packageAmazon.ProjectAmazon.Testcase12_SelectEachPaymentMethod" time="112.208">
+    <system-err><![CDATA[May 12, 2025 10:02:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="applyforCouponCodeWhileOrdering" classname="packageAmazon.ProjectAmazon.Testcase13_ApplyforCouponCodeWhileOrdering" time="15.778">
+    <system-out><![CDATA[The promotional code you entered is not valid.
+]]></system-out>
+    <system-err><![CDATA[May 12, 2025 10:04:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="productRating" classname="packageAmazon.ProjectAmazon.Testcase14_ProductRating" time="25.921">
+    <system-err><![CDATA[May 12, 2025 10:05:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
+]]></system-err>
+  </testcase>
+  <testcase name="reachtillCartPageWithoutLogin" classname="packageAmazon.ProjectAmazon.Testcase15_ReachtillCartPageWithoutLogin" time="10.71">
+    <system-err><![CDATA[May 12, 2025 10:05:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 136, returning the closest version; found: 134; Please update to a Selenium version that supports CDP version 136
 ]]></system-err>
   </testcase>
 </testsuite>

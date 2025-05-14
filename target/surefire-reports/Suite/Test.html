@@ -1,0 +1,494 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 12 21:55:22 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>650 seconds (650549 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase1_RegisterNewUser.RegisternewUser()'><b>RegisternewUser</b><br>Test class: packageAmazon.ProjectAmazon.Testcase1_RegisterNewUser<br/>
+<a href="#Output-153443333" onClick='toggleBox("Output-153443333", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-153443333" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-153443333">
+Test case Passed RegisternewUser<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>packageAmazon.ProjectAmazon.Testcase1_RegisterNewUser@7d8995e</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase3_LoginFailswithIncorrectEmailorPassword.invalidcredentials()'><b>invalidcredentials</b><br>Test class: packageAmazon.ProjectAmazon.Testcase3_LoginFailswithIncorrectEmailorPassword<br/>
+<a href="#Output-1903406683" onClick='toggleBox("Output-1903406683", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1903406683" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1903406683">
+Test case Passed invalidcredentials<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>packageAmazon.ProjectAmazon.Testcase3_LoginFailswithIncorrectEmailorPassword@74235045</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase12_SelectEachPaymentMethod.selectEachPaymentMethod()'><b>selectEachPaymentMethod</b><br>Test class: packageAmazon.ProjectAmazon.Testcase12_SelectEachPaymentMethod<br/>
+<a href="#Output-701747451" onClick='toggleBox("Output-701747451", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-701747451" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-701747451">
+Selected amazonpay<br/>
+Selected creditordebitcard<br/>
+Selected netbanking<br/>
+Selected emi<br/>
+Selected upi<br/>
+Selected cashondelivery<br/>
+payment selection is done<br/>
+Test case Passed selectEachPaymentMethod<br/>
+</div>
+</td>
+<td></td>
+<td>112</td>
+<td>packageAmazon.ProjectAmazon.Testcase12_SelectEachPaymentMethod@2b71e916</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon.validcredentials()'><b>validcredentials</b><br>Test class: packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon<br/>
+<a href="#Output-1761495255" onClick='toggleBox("Output-1761495255", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1761495255" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1761495255">
+Test case Passed validcredentials<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon@765d7657</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase15_ReachtillCartPageWithoutLogin.reachtillCartPageWithoutLogin()'><b>reachtillCartPageWithoutLogin</b><br>Test class: packageAmazon.ProjectAmazon.Testcase15_ReachtillCartPageWithoutLogin<br/>
+<a href="#Output-499950630" onClick='toggleBox("Output-499950630", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-499950630" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-499950630">
+Control passed to child window<br/>
+Reached till cart but cannot proceed to buy without login<br/>
+Test case Passed reachtillCartPageWithoutLogin<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>packageAmazon.ProjectAmazon.Testcase15_ReachtillCartPageWithoutLogin@13c9d689</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase6_SearchingwithFiltersYieldAccurateResults.searchingwithFiltersYieldAccurateResults()'><b>searchingwithFiltersYieldAccurateResults</b><br>Test class: packageAmazon.ProjectAmazon.Testcase6_SearchingwithFiltersYieldAccurateResults<br/>
+<a href="#Output-432112141" onClick='toggleBox("Output-432112141", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-432112141" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-432112141">
+Test case Passed searchingwithFiltersYieldAccurateResults<br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>packageAmazon.ProjectAmazon.Testcase6_SearchingwithFiltersYieldAccurateResults@30c15d8b</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice.checkifProductcanbeSortedByPrice()'><b>checkifProductcanbeSortedByPrice</b><br>Test class: packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice<br/>
+<a href="#Output-1133731484" onClick='toggleBox("Output-1133731484", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1133731484" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1133731484">
+Test case Passed checkifProductcanbeSortedByPrice<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice@6771beb3</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase7_ProductpagedisplaysPriceReviews.displaysPriceProductdescriptionReviews()'><b>displaysPriceProductdescriptionReviews</b><br>Test class: packageAmazon.ProjectAmazon.Testcase7_ProductpagedisplaysPriceReviews<br/>
+<a href="#Output-1608509647" onClick='toggleBox("Output-1608509647", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1608509647" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1608509647">
+Control passed to child window<br/>
+Price is displayed<br/>
+product Description is displayed<br/>
+Customer Reviews is displayed<br/>
+Test case Passed displaysPriceProductdescriptionReviews<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>packageAmazon.ProjectAmazon.Testcase7_ProductpagedisplaysPriceReviews@5e0e82ae</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase10_AddandRemoveItemQuantity.addandRemoveItemQuantity()'><b>addandRemoveItemQuantity</b><br>Test class: packageAmazon.ProjectAmazon.Testcase10_AddandRemoveItemQuantity<br/>
+<a href="#Output-1859227008" onClick='toggleBox("Output-1859227008", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1859227008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1859227008">
+ItemQuantity incremented<br/>
+ItemQuantity decremented<br/>
+Test case Passed addandRemoveItemQuantity<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>packageAmazon.ProjectAmazon.Testcase10_AddandRemoveItemQuantity@6b2ea799</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase13_ApplyforCouponCodeWhileOrdering.applyforCouponCodeWhileOrdering()'><b>applyforCouponCodeWhileOrdering</b><br>Test class: packageAmazon.ProjectAmazon.Testcase13_ApplyforCouponCodeWhileOrdering<br/>
+<a href="#Output-2135889206" onClick='toggleBox("Output-2135889206", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2135889206" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2135889206">
+Couponcode entered<br/>
+Test case Passed applyforCouponCodeWhileOrdering<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>packageAmazon.ProjectAmazon.Testcase13_ApplyforCouponCodeWhileOrdering@36fc695d</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase4_EditProfileInfo.editProfileInfo()'><b>editProfileInfo</b><br>Test class: packageAmazon.ProjectAmazon.Testcase4_EditProfileInfo<br/>
+<a href="#Output-2142411945" onClick='toggleBox("Output-2142411945", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2142411945" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2142411945">
+Test case Passed editProfileInfo<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>packageAmazon.ProjectAmazon.Testcase4_EditProfileInfo@618b19ad</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase11_CheckoutProcessAddressPaymentSelectionOrderreview.checkoutProcessAddressPaymentSelectionOrderreview()'><b>checkoutProcessAddressPaymentSelectionOrderreview</b><br>Test class: packageAmazon.ProjectAmazon.Testcase11_CheckoutProcessAddressPaymentSelectionOrderreview<br/>
+<a href="#Output-1358917731" onClick='toggleBox("Output-1358917731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1358917731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1358917731">
+control passed<br/>
+Product added to cart<br/>
+Address selection is done<br/>
+Payment selection is done<br/>
+Review page comtains product detail<br/>
+Test case Passed checkoutProcessAddressPaymentSelectionOrderreview<br/>
+</div>
+</td>
+<td></td>
+<td>55</td>
+<td>packageAmazon.ProjectAmazon.Testcase11_CheckoutProcessAddressPaymentSelectionOrderreview@411f53a0</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase14_ProductRating.productRating()'><b>productRating</b><br>Test class: packageAmazon.ProjectAmazon.Testcase14_ProductRating<br/>
+<a href="#Output-1396794397" onClick='toggleBox("Output-1396794397", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1396794397" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1396794397">
+Logged in with credentials<br/>
+Able to view orders page<br/>
+Review submitted with 5 star rating<br/>
+Test case Passed productRating<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>packageAmazon.ProjectAmazon.Testcase14_ProductRating@28701274</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase5_LogintoAmazon_SearchforAproduct.validcredentials_searchingproduct()'><b>validcredentials_searchingproduct</b><br>Test class: packageAmazon.ProjectAmazon.Testcase5_LogintoAmazon_SearchforAproduct<br/>
+<a href="#Output-1775525066" onClick='toggleBox("Output-1775525066", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1775525066" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1775525066">
+Test case Passed validcredentials_searchingproduct<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>packageAmazon.ProjectAmazon.Testcase5_LogintoAmazon_SearchforAproduct@2d3379b4</td></tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase9_ProductaddedtoCart.productaddedtocart()'><b>productaddedtocart</b><br>Test class: packageAmazon.ProjectAmazon.Testcase9_ProductaddedtoCart<br/>
+<a href="#Output-398777435" onClick='toggleBox("Output-398777435", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-398777435" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-398777435">
+Control passed to child window<br/>
+Test case Passed productaddedtocart<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>packageAmazon.ProjectAmazon.Testcase9_ProductaddedtoCart@51399530</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon.validcredentials()'><b>validcredentials</b><br>Test class: packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon</td>
+<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [48022313a5267724258e702b79efd390, actions {actions=[org.openqa.selenium.interactions.Sequence@b965857]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.92, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58151/devtoo..., se:cdpVersion: 136.0.7103.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 48022313a5267724258e702b79efd390
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
+	at java.base/java.util.Map.forEach(Map.java:733)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
+	at org.openqa.selenium.json.Json.toJson(Json.java:133)
+	at org.openqa.selenium.json.Json.toJson(Json.java:119)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:236)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:109)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:203)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at packageAmazon.ProjectAmazon.Homepage.acntndlst(Homepage.java:50)
+	at packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon.validcredentials(Testcase2_LogintoAmazon.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431)
+		at org.openqa.selenium.json.Json.toJson(Json.java:131)
+		... 42 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)
+	... 63 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;nav-line-2 &apos;]&quot;}
+  (Session info: chrome=136.0.7103.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [48022313a5267724258e702b79efd390, findElement {value=//span[@class=&apos;nav-line-2 &apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.92, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58151/devtoo..., se:cdpVersion: 136.0.7103.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 48022313a5267724258e702b79efd390
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:262)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:211)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:74)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:83)
+	... 65 more
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1643646293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1643646293'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [48022313a5267724258e702b79efd390, actions {actions=[org.openqa.selenium.interactions.Sequence@b965857]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.92, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58151/devtoo..., se:cdpVersion: 136.0.7103.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 48022313a5267724258e702b79efd390
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:636)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
+	at java.base/java.util.Map.forEach(Map.java:733)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
+	at org.openqa.selenium.json.Json.toJson(Json.java:133)
+	at org.openqa.selenium.json.Json.toJson(Json.java:119)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:236)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:109)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:203)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at packageAmazon.ProjectAmazon.Homepage.acntndlst(Homepage.java:50)
+	at packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon.validcredentials(Testcase2_LogintoAmazon.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431)
+		at org.openqa.selenium.json.Json.toJson(Json.java:131)
+		... 42 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)
+	... 63 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;nav-line-2 &apos;]&quot;}
+  (Session info: chrome=136.0.7103.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [48022313a5267724258e702b79efd390, findElement {value=//span[@class=&apos;nav-line-2 &apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.92, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58151}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58151/devtoo..., se:cdpVersion: 136.0.7103.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 48022313a5267724258e702b79efd390
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:262)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:211)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:74)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:83)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	... 65 more
+</pre></div></td>
+<td>10</td>
+<td>packageAmazon.ProjectAmazon.Testcase2_LogintoAmazon@765d7657</td></tr>
+</table><p>
+</body>
+</html>

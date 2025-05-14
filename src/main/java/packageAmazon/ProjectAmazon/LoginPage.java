@@ -1,12 +1,15 @@
 package packageAmazon.ProjectAmazon;
 
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage 
+public class LoginPage extends ExcelSheetHandler
 {
 	WebDriver driver;
 	@FindBy(name="email")
@@ -21,19 +24,22 @@ public class LoginPage
 	@FindBy(id="signInSubmit")
 	WebElement signinbutton;
 	
+	@FindBy(xpath="(//div[@class='a-box-inner a-alert-container'])[3]")
+	WebElement invalidemail;
 	//2
-	public void un()
+	public void uname(int row,int column) throws EncryptedDocumentException, IOException
 	{
-		username.sendKeys("treesa.jincy43@gmail.com");
+		String un=ExcelSheetHandler.exceldata(row, column);
+		username.sendKeys(un);
 	}
-	
 	public void cont()
 	{
 		continuebutton.click();
 	}
-	public void pwd()
+	public void pswrd(int row,int column) throws EncryptedDocumentException, IOException
 	{
-		password.sendKeys("Jincy@43");
+		String pwd=ExcelSheetHandler.exceldata(row, column);
+		password.sendKeys(pwd);
 	}
 	public void signin()
 	{
