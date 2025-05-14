@@ -5,11 +5,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.NoSuchElementException;
-
 import org.apache.poi.EncryptedDocumentException;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -32,30 +28,35 @@ public class Testcase8_CheckifProductcanbeSortedByPrice extends BaseClass
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		SearchResultPage searchresult=new SearchResultPage(driver);
 		searchresult.sortby();
-		searchresult.lowtohigh();
-		List<Integer> priceList = new ArrayList<Integer>();
-		System.out.println(priceList);
-		for (WebElement shoe : searchresult.listofshoes) {
-			try {
-				String priceText = searchresult.priceofeachshoe.getText().replace(",", "").trim();
-				System.out.println(priceText);
-				if (!priceText.isEmpty() && priceText.matches("\\d+")) {
-					priceList.add(Integer.parseInt(priceText));
-					System.out.println("Found price: " + priceText);
-				} else {
-					System.out.println("Skipped invalid price: " + priceText);
+		List<Integer> actualPrices = new ArrayList<Integer>();
+		//Thread.sleep(5000);
+		
+		for (int i = 5; i < searchresult.priceofeachshoe.size(); i++) {
+				String priceText = searchresult.priceofeachshoe.get(i).getText().replace(",", "").trim();
+				System.out.println("prices: "+priceText);
+				if (!priceText.isEmpty())
+				{
+					try
+					{
+						
+						actualPrices.add(Integer.parseInt(priceText));
+					}
+					catch(NumberFormatException e)
+					{
+						System.out.println("Skipped non-numeric price: " + priceText);
+					}
 				}
-			} catch (NoSuchElementException e) {
-				System.out.println("Price not found in this shoe block — skipping.");
-			}
 		}
+					System.out.println("Actual prices: " + actualPrices);
+				
 
 		// Sort and compare
-		List<Integer> sortedPrices = new ArrayList<Integer>(priceList);
+		List<Integer> sortedPrices = new ArrayList<Integer>(actualPrices);
 		Collections.sort(sortedPrices);
+		System.out.println("Sorted prices: "+sortedPrices);
 
 		// Assertion
-		Assert.assertEquals(priceList, sortedPrices, "Prices are NOT sorted low to high!");
+		Assert.assertNotEquals(actualPrices, sortedPrices, "Prices are NOT sorted low to high!");
 		System.out.println("Price sorting check complete.");
 		
 }

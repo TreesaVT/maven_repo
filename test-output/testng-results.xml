@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="1" ignored="1" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[ItemQuantity incremented]]>
-    </line>
-    <line>
-      <![CDATA[ItemQuantity decremented]]>
-    </line>
-    <line>
-      <![CDATA[Test case Passed addandRemoveItemQuantity]]>
+      <![CDATA[Test case Passed checkifProductcanbeSortedByPrice]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-05-12T14:57:09 IST" name="Suite" finished-at="2025-05-12T14:57:42 IST" duration-ms="33375">
+  <suite started-at="2025-05-14T06:35:47 IST" name="Suite" finished-at="2025-05-14T06:36:34 IST" duration-ms="46322">
     <groups>
     </groups>
-    <test started-at="2025-05-12T14:57:09 IST" name="Test" finished-at="2025-05-12T14:57:42 IST" duration-ms="33375">
-      <class name="packageAmazon.ProjectAmazon.Testcase10_AddandRemoveItemQuantity">
-        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:packageAmazon.ProjectAmazon.Testcase10_AddandRemoveItemQuantity@6ed3ccb2]" started-at="2025-05-12T14:57:09 IST" name="launch" finished-at="2025-05-12T14:57:14 IST" duration-ms="4871" status="PASS">
+    <test started-at="2025-05-14T06:35:47 IST" name="Test" finished-at="2025-05-14T06:36:34 IST" duration-ms="46322">
+      <class name="packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice">
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice@6ed3ccb2]" started-at="2025-05-14T06:35:47 IST" name="launch" finished-at="2025-05-14T06:35:52 IST" duration-ms="4984" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,24 +21,75 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="addandRemoveItemQuantity()[pri:0, instance:packageAmazon.ProjectAmazon.Testcase10_AddandRemoveItemQuantity@6ed3ccb2]" started-at="2025-05-12T14:57:14 IST" name="addandRemoveItemQuantity" finished-at="2025-05-12T14:57:39 IST" duration-ms="25877" status="PASS">
+        <test-method retried="true" signature="checkifProductcanbeSortedByPrice()[pri:0, instance:packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice@6ed3ccb2]" started-at="2025-05-14T06:35:52 IST" name="checkifProductcanbeSortedByPrice" finished-at="2025-05-14T06:36:11 IST" duration-ms="18617" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Prices are NOT sorted low to high! did not expect [[]] but found [[]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Prices are NOT sorted low to high! did not expect [[]] but found [[]]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.assertNotEquals(Assert.java:2218)
+at packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice.checkifProductcanbeSortedByPrice(Testcase8_CheckifProductcanbeSortedByPrice.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
-            <line>
-              <![CDATA[ItemQuantity incremented]]>
-            </line>
-            <line>
-              <![CDATA[ItemQuantity decremented]]>
-            </line>
-            <line>
-              <![CDATA[Test case Passed addandRemoveItemQuantity]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- addandRemoveItemQuantity -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:packageAmazon.ProjectAmazon.Testcase10_AddandRemoveItemQuantity@6ed3ccb2]" started-at="2025-05-12T14:57:40 IST" name="quit" finished-at="2025-05-12T14:57:42 IST" duration-ms="2372" status="PASS">
+        </test-method> <!-- checkifProductcanbeSortedByPrice -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice@6ed3ccb2]" started-at="2025-05-14T06:36:11 IST" name="quit" finished-at="2025-05-14T06:36:13 IST" duration-ms="2431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- packageAmazon.ProjectAmazon.Testcase10_AddandRemoveItemQuantity -->
+        <test-method is-config="true" signature="launch(java.lang.String)[pri:0, instance:packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice@6ed3ccb2]" started-at="2025-05-14T06:36:13 IST" name="launch" finished-at="2025-05-14T06:36:17 IST" duration-ms="3590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="checkifProductcanbeSortedByPrice()[pri:0, instance:packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice@6ed3ccb2]" started-at="2025-05-14T06:36:17 IST" name="checkifProductcanbeSortedByPrice" finished-at="2025-05-14T06:36:31 IST" duration-ms="13870" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test case Passed checkifProductcanbeSortedByPrice]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkifProductcanbeSortedByPrice -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice@6ed3ccb2]" started-at="2025-05-14T06:36:31 IST" name="quit" finished-at="2025-05-14T06:36:34 IST" duration-ms="2527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

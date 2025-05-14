@@ -4,13 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="packageAmazon.ProjectAmazon.Testcase10_AddandRemoveItemQuantity">
+      <class name="packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice">
         <methods>
           <include name="quit"/>
           <include name="launch"/>
-          <include name="addandRemoveItemQuantity"/>
+          <include name="checkifProductcanbeSortedByPrice"/>
         </methods>
-      </class> <!-- packageAmazon.ProjectAmazon.Testcase10_AddandRemoveItemQuantity -->
+      </class> <!-- packageAmazon.ProjectAmazon.Testcase8_CheckifProductcanbeSortedByPrice -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
